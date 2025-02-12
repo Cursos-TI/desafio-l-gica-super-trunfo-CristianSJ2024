@@ -1,36 +1,58 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 2 - Comparação das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de comparação de cartas de cidades. 
-// Siga os comentários para implementar cada parte do desafio.
-
 int main() {
-    // Definição das variáveis para armazenar as propriedades das cidades
-    // Você pode utilizar o código do primeiro desafio
-
+    int codigo;
+    char nome[100];
+    int populacao;
+    float area;
+    float pib;
+    int pontosTuristicos;
     
-    // Cadastro das Cartas:
-    // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
-    // utilizando a função scanf para capturar as entradas.
-    // utilize o código do primeiro desafio
+    printf("Digite o código da cidade: \n");
+    scanf("%d", &codigo);
+    printf("Digite o nome da cidade: \n");
+    scanf("%s", &nome);
+    printf("Digite a população da cidade: \n");
+    scanf("%d", &populacao);
+    printf("Digite o PIB da cidade: \n");
+    scanf("%f", &pib);
+    printf("Digite a quantidade de pontos turísticos da cidade: \n");
+    scanf("%d", &pontosTuristicos);
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+    printf("Digite o código da cidade 2: \n");
+    scanf("%d", &codigo);
+    printf("Digite o nome da cidade 2: \n");
+    scanf("%s", &nome);
+    printf("Digite a população da cidade 2: \n");
+    scanf("%d", &populacao);
+    printf("Digite o PIB da cidade 2: \n");
+    scanf("%f", &pib);
+    printf("Digite a quantidade de pontos turísticos da cidade 2: \n");
+    scanf("%d", &pontosTuristicos);
+    
+    if (populacao > 12.000000) {
+        printf("A cidade 1 tem maior população. \n");
+    } else {
+        printf("Cidade 2 tem maior população. \n");
+    }
 
-    // Comparação de Cartas:
-    // Desenvolva a lógica de comparação entre duas cartas.
-    // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
+    if (area > 1.523) {
+        printf("A cidade 1 tem maior áera. \n");
+    } else {
+        printf("A cidade 2 tem maior área. \n");
+    }
+    
+    if (pib > 1.600000000000) {
+        printf("A cidade 1 tem maior PIB, \n");
+    } else {
+        printf("A cidade 2 tem maior PIB. \n");
+    }
 
-    // Exemplo:
-    // if (populacaoA > populacaoB) {
-    //     printf("Cidade 1 tem maior população.\n");
-    // } else {
-    //     printf("Cidade 2 tem maior população.\n");
-    // }
+    if (pontosTuristicos > 36) {
+        printf("A cidade 1 tem mais pontos turísticos. \n");
+    } else {
+        printf("A cidade 2 tem mais pontos tirísticos. \n");
+    }
 
     // Exibição dos Resultados:
     // Após realizar as comparações, exiba os resultados para o usuário.
